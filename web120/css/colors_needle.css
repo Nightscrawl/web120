@@ -1,12 +1,12 @@
 /* LAYOUT COLORS & LINKS */
 
 /* MEDIUM */
-header {
-    background-color: #8d9db6;
+header, article a:hover, article a:active {
+    background-color: #c485b8;
 }
 
 article a:link {
-    border-bottom: 2px solid #8d9db6;
+    border-bottom: 2px solid #c485b8;
 }
 
 article a:visited {
@@ -15,17 +15,17 @@ article a:visited {
 
 /* DARK */
 nav, footer {
-    background-color: #667292;
+    background-color: #af68a2;
 }
 
 /* BODY */
 body, article, .currentPage {
-    background-color: #f1e3dd;
+    background-color: #e7e7e7;
 }
 
 /* LIGHT */
-aside, nav a:hover, nav a:active, article a:hover, article a:active {
-    background-color: #bccad6;
+aside, nav a:hover, nav a:active {
+    background-color: #c9c9c9;
 }
 
 body, article, .currentPage, aside, nav a:hover, nav a:active, article a:link, article a:hover, article a:active {

@@ -1,0 +1,63 @@
+/* RESPONSIVE LAYOUT */
+
+@media screen and (max-width: 615px) {
+    nav {
+        line-height: 125%;
+    }
+
+    nav ul {
+        margin-left: 0px;
+        padding: 5px 0px;
+        list-style-type: none;
+        list-style-position: outside;
+    }
+    
+    nav li {
+        display: block;
+    }
+    
+    nav li a {
+        padding: 0px 10px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+    
+    article {
+        width: 100%;
+        order: 2;
+    }
+    
+    aside {
+        width: 100%;
+        order: 1;
+        padding: 0px 0px 18px 0px;
+        background: none;
+    }
+
+    aside p {
+        padding-right: 10px;
+    }
+
+    footer {
+        text-align: center;
+        line-height: 125%;
+    }
+
+    .left {
+        float: none;
+        padding-left: 0px;
+    }
+    
+    .right {
+        float: none;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #mainTitle {
+        font-size: 1.5em;
+    }
+}
