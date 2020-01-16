@@ -1,6 +1,16 @@
 /* RESPONSIVE LAYOUT */
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 768px) {   /* TABLET */
+    .tablet {
+        display: inline-block;
+    }
+    
+    .phone, .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 615px) {   /* LAYOUT BREAKS */
     nav {
         line-height: 125%;
     }
@@ -54,9 +64,17 @@
         float: none;
         padding-right: 0px;
     }
+
+    .phone {
+        display: inline-block;
+    }
+    
+    .desktop, .tablet {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {   /* PHONE */
     #mainTitle {
         font-size: 1.5em;
     }

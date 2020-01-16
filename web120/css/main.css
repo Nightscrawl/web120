@@ -97,6 +97,14 @@ aside img {
     margin: 0px auto;
 }
 
+.desktop {
+    display: inline-block;
+}
+
+.phone, .tablet {
+    display: none;
+}
+
 aside p {
     line-height: 125%;
     font-size: .75em;

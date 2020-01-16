@@ -25,7 +25,7 @@ body, article, .currentPage {
 
 /* LIGHT */
 aside, nav a:hover, nav a:active, article a:hover, article a:active {
-    background-color: #acd27f;
+    background-color: #b5cc99;
 }
 
 body, article, .currentPage, aside, nav a:hover, nav a:active, article a:link, article a:hover, article a:active {
