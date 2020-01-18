@@ -25,7 +25,7 @@
 
                 <nav>
                     <ul>
-                        <li><a class="currentPage" href="#">Welcome</a></li>
+                        <li><a class="currentPage" href="index.php">Welcome</a></li>
                         <li><a href="big/index.php">Big</a></li>
                         <li><a href="aia.php">AIA</a></li>
                         <li><a href="flowchart.php">Flowchart</a></li>
@@ -41,3 +41,4 @@
             <section>
 
                 <h2 class="hide">Main Content</h2>
+                

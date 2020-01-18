@@ -24,8 +24,12 @@ body, article, .currentPage {
 }
 
 /* LIGHT */
-aside, nav a:hover, nav a:active, article a:hover, article a:active {
+aside, nav a:hover, nav a:active, article a:hover, article a:active, #submit:hover {
     background-color: #afc7dd;
+}
+
+#submit {
+    background-color: #c9c9c9;
 }
 
 body, article, .currentPage, aside, nav a:hover, nav a:active, article a:link, article a:hover, article a:active {

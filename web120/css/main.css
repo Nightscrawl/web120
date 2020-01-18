@@ -144,3 +144,34 @@ nav li a {
     padding: 10px;
     padding-top: 9px;
 }
+
+
+/* FORM */
+
+form {
+    line-height: 133%;
+}
+
+.fields {
+    margin-top: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+input, textarea {
+    max-width: 250px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+#submit {
+    margin-top: 5px;
+    padding: 4px;
+    width: 5em;
+}
+
+.g-recaptcha {
+    margin-top: 5px;
+}
