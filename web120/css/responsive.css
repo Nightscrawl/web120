@@ -8,6 +8,10 @@
     .phone, .desktop {
         display: none;
     }
+
+    .breakAside {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 615px) {   /* LAYOUT BREAKS */
@@ -77,5 +81,9 @@
 @media screen and (max-width: 420px) {   /* PHONE */
     #mainTitle {
         font-size: 1.5em;
+    }
+
+    .breakFooter {
+        display: inline;
     }
 }

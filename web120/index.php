@@ -2,7 +2,7 @@
 
                 <article>
 
-                    <h3 id="greeting">Hello!</h3>
+                    <h3>Hello!</h3>
 
                     <p>
                         My name is Kira and this is my second year at Seattle Central College. I started off on the database track, but taking Web 110 last quarter reminded me of my interest in web development and design, so I have switched my track to that path. I am hoping to complete my programming associate's degree some time in 2021. In addition, I am a member of the <a href="https://sites.google.com/view/scptk/home" target="_blank">Phi Theta Kappa</a> honor society at SCC.

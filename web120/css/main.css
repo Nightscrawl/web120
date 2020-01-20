@@ -32,7 +32,7 @@ header {
     font-weight: normal;
 }
 
-#greeting {
+h3 {
     font-size: 1.25em;
 }
 
@@ -105,6 +105,14 @@ aside img {
     display: none;
 }
 
+.breakAside {
+    display: none;
+}
+
+.breakFooter {
+    display: none;
+}
+
 aside p {
     line-height: 125%;
     font-size: .75em;
@@ -156,22 +164,34 @@ form {
     margin-top: 10px;
 }
 
+.fields:first-child {
+    margin-top: 0px;
+}
+
+#fields-container {
+    max-width: 250px;
+}
+
 fieldset {
+    margin-top: 30px;
     border: none;
 }
 
 input, textarea {
-    max-width: 250px;
+    width: 100%;
     padding: 3px;
     border: 1px solid black;
 }
 
 #submit {
-    margin-top: 5px;
     padding: 4px;
     width: 5em;
 }
 
 .g-recaptcha {
     margin-top: 5px;
+    transform: scale(0.66);
+    -webkit-transform: scale(0.66);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
 }

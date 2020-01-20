@@ -1,7 +1,8 @@
+<?php include 'portal_config.php'?>
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>K. Abell's Web 120 Portal</title>
+        <title><?=$title?></title>
         <meta name="author" content="K. Abell" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,inital-scale=1" />
@@ -25,12 +26,15 @@
 
                 <nav>
                     <ul>
+                        <?=makeLinks($nav1)?>
+                        <!-- 
                         <li><a class="currentPage" href="index.php">Welcome</a></li>
                         <li><a href="big/index.php">Big</a></li>
                         <li><a href="aia.php">AIA</a></li>
                         <li><a href="flowchart.php">Flowchart</a></li>
                         <li><a href="fp/index.php">Final Project</a></li>
                         <li><a href="contact.php">Contact</a></li>
+                        -->
                     </ul>
 
                 </nav>

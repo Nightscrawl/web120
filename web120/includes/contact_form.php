@@ -17,31 +17,45 @@
 #--------------END CONFIG AREA ------------------------#
 ?>
 	                <!-- START HTML FORM -->
+                    <h3>Share your thoughts.</h3>
+
+                    <p>
+                        I welcome any comments or suggestions.
+                    </p>
+                    
                     <form action="<?php echo basename($_SERVER['PHP_SELF']); ?>" method="post">
 
                     <fieldset>
-                        <div class="fields">
-                            <label for="name">Name:</label><br />
-                            <input id="name" type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" tabindex="10" size="44" autofocus />
-                        </div>
+                        <legend class="hide">Contact Form</legend>
 
-                        <div class="fields">	
-                            <label for="email">Email:</label><br />
-                            <input id="email" type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" size="44" />
-                        </div>
+                        <div id="fields-container">
+                            <div class="fields">
+                                <label for="name">Name:</label><br />
+                                <input id="name" type="text" name="Name" required="required" placeholder="Full Name (required)" title="Name is required" size="44" autofocus />
+                            </div>
 
-                        <div class="fields">	
-                            <label>Comments:</label><br />
-                            <textarea name="Comments" cols="36" rows="4" placeholder="Your comments are important to us!" tabindex="30"></textarea>
-                        </div>
+                            <div class="fields">	
+                                <label for="email">Email:</label><br />
+                                <input id="email" type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" size="44" />
+                            </div>
+
+                            <div class="fields">	
+                                <label for="comments">Comments:</label><br />
+                                <textarea id="comments" name="Comments" cols="36" rows="4" placeholder="Leave a comment!"></textarea>
+                            </div>                
+                        </div> <!-- end fields-container -->
                         
-                        <div class="g-recaptcha" data-sitekey="<?=$siteKey;?>"></div>
-                        
+                        <div class="g-recaptcha" data-theme="light" data-sitekey="<?=$siteKey;?>"></div>
+                        <!-- for dark sites, change above theme to "dark" -->
+
                         <div>
                             <input id="submit" type="submit" value="Submit" />
                         </div>
 
-                    </fieldset>
+                    </fieldset>                   
 
                     </form>
+
+                    <script src="js/cap_resize.js"></script>
+
                     <!-- END HTML FORM -->

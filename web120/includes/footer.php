@@ -4,7 +4,7 @@
                     <img class="phone" src="images/interlaken.jpg" alt="a park path, dirt trail, lined with trees" title="Interlaken Park, Seattle, Washington" />
                     <p>
                         <span class="desktop">Louisa Boren Lookout</span>
-                        <span class="tablet">The Space Needle on New Year's Eve</span>
+                        <span class="tablet">The Space Needle on <br class="breakAside" />New Year's Eve</span>
                         <span class="phone">Interlaken Park</span><br />
                         Copyright 2019 by Kira Abell
                     </p>
@@ -16,7 +16,7 @@
             <footer>
 
                 <div class="left">
-                    Copyright 2020 by Kira Abell. All Rights Reserved.
+                    Copyright 2020-<?=date('Y')?> by Kira Abell. <br class="breakFooter" />All Rights Reserved.
                 </div>
 
                 <div class="right">
