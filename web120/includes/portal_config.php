@@ -1,12 +1,15 @@
 <?php
 
-/*
-portal-config.php
-Used to store all of our web120 configuration information
-*/
+/* portal-config.php
+    Used to store all of our web120 configuration information */
+
 
 //helps avoid date errors
 date_default_timezone_set('America/Los_Angeles');
+
+
+//prevents data from being sent early
+ob_start();
 
 
 //echo $_SERVER['PHP_SELF'];
@@ -29,22 +32,27 @@ switch(THIS_PAGE) {
 
     case 'index.php':
         $title = "K. Abell's Web 120 Portal";
+        $logo = 'fas fa-dragon';
     break;
 
     case 'aia.php':
         $title = "K. Abell's Web 120 Portal - AIA";
+        $logo = 'fas fa-hat-wizard';
     break;
 
     case 'flowchart.php':
         $title = "K. Abell's Web 120 Portal - Flowchart";
+        $logo = 'fas fa-crow';
     break;
 
     case 'contact.php':
         $title = "K. Abell's Web 120 Portal - Contact Me";
+        $logo = 'fas fa-paper-plane';
     break;
 
     default:
         $title = THIS_PAGE;
+        $logo = '';  // no logo by default
 }
 /* then the php short tag -- <?=$title?> -- is placed on the header.php */
 

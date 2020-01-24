@@ -12,6 +12,8 @@
         <link media="screen and (max-width: 768px)" href="css/colors_needle.css" rel="stylesheet" />
         <link media="screen and (max-width: 615px)" href="css/colors_interlaken.css" rel="stylesheet" />
         <link href="css/responsive.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/1552b45d46.js" crossorigin="anonymous"></script>
+
     </head>
 
     <body>
@@ -21,7 +23,7 @@
             <header>
 
                 <h1 id="mainTitle">
-                    Kira Abell&rsquo;s Web 120 Portal
+                    Kira Abell&rsquo;s Web 120 Portal <i class="logo <?=$logo?>" aria-hidden="true"></i>
                 </h1>
 
                 <nav>
@@ -45,4 +47,5 @@
             <section>
 
                 <h2 class="hide">Main Content</h2>
-                
+
+                <article>      

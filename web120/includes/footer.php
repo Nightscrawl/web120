@@ -1,3 +1,5 @@
+                </article>
+                
                 <aside>
                     <img class="desktop" src="images/louisa_boren_lookout.jpg" alt="scenic overlook view with a lake in the background, fall setting" title="Louisa Boren Lookout, Seattle, Washington" />
                     <img class="tablet" src="images/new_yr_needle.jpg" alt="the space needle, glowing pink for new year's eve" title="The Space Needle on New Year's Eve, Seattle, Washington" />
@@ -16,7 +18,7 @@
             <footer>
 
                 <div class="left">
-                    Copyright 2020-<?=date('Y')?> by Kira Abell. <br class="breakFooter" />All Rights Reserved.
+                    &copy; Copyright <?=date('Y')?> by <a href="contact.php">Kira Abell</a>. <br class="breakFooter" />All Rights Reserved.
                 </div>
 
                 <div class="right">
