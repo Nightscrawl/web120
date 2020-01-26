@@ -23,6 +23,9 @@ body {
     flex-direction: column;
 }
 
+
+/* HEADER */
+
 header {
     text-align: center;
     background-color: black;
@@ -39,24 +42,29 @@ header {
 }
 
 nav {
-    padding: 5px 0px;
     background: #0d0d0d url("../images/black_noise.jpg") repeat;
     font-family: 'Futura Condensed', sans-serif;
     text-transform: uppercase;
     font-size: 1.75em;
 }
 
-section {
+/* CONTENT */
+
+#content {
     padding: 50px;
     width: 100%;
     flex-grow: 1;
     line-height: 150%;
 }
 
-.box {
-    margin: 0px auto;
-    margin-bottom: 40px;
+main {
     width: 66%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.box {
+    margin-bottom: 40px;
 }
 
 .box:last-child {
@@ -74,13 +82,14 @@ section {
     float: left;
     width: 12em;
     display: block;
+    box-shadow: 2px 2px 0px #00cbcb;
 }
 
 .blurb {
     overflow: hidden;
 }
 
-h2 {
+h1 {
     font-family: 'Futura Condensed', sans-serif;
     font-size: 1.75em;
     letter-spacing: 1px;
@@ -89,13 +98,13 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
+h2 {
     font-family: 'Futura Condensed', sans-serif;
     font-size: 1.25em;
     letter-spacing: 1px;
 }
 
-h3, p {
+h2, p {
     margin-bottom: 12px;
 }
 
@@ -103,9 +112,12 @@ p:last-child {
     margin-bottom: 0px;
 }
 
+
+/* FOOTER */
+
 footer {
     padding: 10px 0px;
-    font-size: .66em;
+    font-size: 11px;
     text-transform: uppercase;
     background-color: black;
 }
@@ -114,6 +126,8 @@ header, footer {
     width: 100%;
     flex-grow: 0;
 }
+
+
 
 .left {
     float: left;
@@ -133,7 +147,20 @@ header, footer {
 /* LINKS */
 
 nav a {
-    padding: 0px 14px;
+    padding: 2px 14px;
+    display: inline-block;
+}
+
+nav a {
+    margin: 0px 3px;
+}
+
+nav a:first-of-type {
+    margin-left: 0px;
+}
+
+nav a:last-of-type {
+    margin-right: 0px;
 }
 
 nav a, footer a {
@@ -153,17 +180,17 @@ nav a:hover, footer a:hover {
     text-shadow: none;
 }
 
-section a {
+main a {
     padding: 2px;    
     color: #00cbcb;
     text-decoration: none;
 }
 
-section a:visited {
+main a:visited {
     color: gray;
 }
 
-section a:hover {
+main a:hover {
     background-color: #00cbcb;
     color: black;
 }
