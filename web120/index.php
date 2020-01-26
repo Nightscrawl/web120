@@ -1,6 +1,6 @@
 <?php include "includes/header.php";?>
 
-<h3>Hello!</h3>
+<h2>Hello!</h2>
 
 <p>
     I've travelled over four-thousand miles to get to where I am. Born and raised in Miami, Florida, eleven years ago, I undertook a two-month car journey to Seattle, Washington, taking in the various sights and sites along the way. To this day, it remains my greatest adventure.

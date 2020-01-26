@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 615px) {   /* LAYOUT BREAKS */
     nav {
-        line-height: 125%;
+        line-height: 133%;
     }
 
     nav ul {
@@ -34,11 +34,11 @@
         padding: 0px 10px;
     }
 
-    section {
+    #content {
         flex-direction: column;
     }
     
-    article {
+    main {
         width: 100%;
         order: 2;
     }
@@ -78,12 +78,18 @@
     }
 }
 
-@media screen and (max-width: 420px) {   /* PHONE */
+@media screen and (max-width: 435px) {   /* PHONE */
     #mainTitle {
         font-size: 1.5em;
     }
 
     .breakFooter {
         display: inline;
+    }
+}
+
+@media screen and (max-width: 330px) {   /* PHONE */
+    #mainTitle {
+        font-size: 1.25em;
     }
 }

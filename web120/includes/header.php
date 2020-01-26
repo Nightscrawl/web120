@@ -44,8 +44,6 @@
             </header>
 
 
-            <section>
+            <div id="content">
 
-                <h2 class="hide">Main Content</h2>
-
-                <article>      
+                <main>

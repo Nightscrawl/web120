@@ -1,4 +1,4 @@
-                </article>
+                </main>
                 
                 <aside>
                     <img class="desktop" src="images/louisa_boren_lookout.jpg" alt="scenic overlook view with a lake in the background, fall setting" title="Louisa Boren Lookout, Seattle, Washington" />
@@ -12,18 +12,19 @@
                     </p>
                 </aside>
 
-            </section>
+            </div> <!-- end content -->
 
 
             <footer>
 
                 <div class="left">
-                    &copy; Copyright <?=date('Y')?> by <a href="contact.php">Kira Abell</a>. <br class="breakFooter" />All Rights Reserved.
+                    Copyright <?=date('Y')?> by Kira Abell. <br class="breakFooter" />All Rights Reserved.
                 </div>
 
                 <div class="right">
                     <a href="https://validator.w3.org/check/referer" target="_blank">HTML5</a> | 
-                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS3</a>
+                    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS3</a> | 
+                    <a href="https://wave.webaim.org/refer" target="_blank">WAVE</a>
                 </div>
 
             </footer>

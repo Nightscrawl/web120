@@ -21,6 +21,9 @@ body {
     flex-direction: column;
 }
 
+
+/* HEADER */
+
 header {
     text-align: left;
 }
@@ -36,11 +39,61 @@ i.logo {
     font-size: .5em;
 }
 
-h3 {
+
+/* NAV */
+
+nav {
+    width: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin-left: 4px;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/* CONTENT */
+
+#content {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    line-height: 150%;
+}
+
+main, aside {
+    padding: 18px 22px;
+}
+
+main {
+    width: 66%;
+    order: 1;
+}
+
+aside {
+    width: 34%;
+    order: 2;
+}
+
+h2 {
     font-size: 1.25em;
 }
 
-h3, p {
+h2, p {
     margin-bottom: 12px;
 }
 
@@ -48,11 +101,26 @@ p:last-child {
     margin-bottom: 0px;
 }
 
+aside img {
+    width: 100%;
+    margin: 0px auto;
+}
+
+aside p {
+    line-height: 125%;
+    font-size: .75em;
+    text-align: right;
+}
+
+
+/* FOOTER */
+
 footer {
     padding: 10px 0px;
-    font-size: .66em;
+    font-size: 11px;
     text-transform: uppercase;
 }
+
 
 .left {
     float: left;
@@ -73,34 +141,6 @@ header, footer {
     flex-grow: 0;
 }
 
-section {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    line-height: 150%;
-}
-
-article, aside {
-    padding: 18px 22px;
-}
-
-article {
-    width: 66%;
-    order: 1;
-}
-
-aside {
-    width: 34%;
-    order: 2;
-}
-
-aside img {
-    width: 100%;
-    margin: 0px auto;
-}
-
 .desktop {
     display: inline-block;
 }
@@ -117,11 +157,8 @@ aside img {
     display: none;
 }
 
-aside p {
-    line-height: 125%;
-    font-size: .75em;
-    text-align: right;
-}
+
+/* LINKS */
 
 a {
     text-decoration: none;
@@ -129,32 +166,6 @@ a {
 
 article a {
     padding: 2px;
-}
-
-
-/* MENU */
-
-nav {
-    width: 100%;
-    font-weight: 500;
-    line-height: 100%;
-    text-transform: uppercase;
-}
-
-nav ul {
-    margin-left: -6px;
-    padding: 10px;
-    list-style-type: none;
-    list-style-position: outside;
-}
-
-nav li {
-    display: inline;
-}
-
-nav li a {
-    padding: 10px;
-    padding-top: 9px;
 }
 
 
@@ -192,6 +203,11 @@ input, textarea {
     width: 5em;
 }
 
+
+/* 
+resize reCAPTCHA box:
+https://geekgoddess.com/how-to-resize-the-google-nocaptcha-recaptcha/
+ */
 .g-recaptcha {
     margin-top: 5px;
     transform: scale(0.66);

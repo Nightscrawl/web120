@@ -5,11 +5,11 @@ header {
     background-color: #7aa6d2;
 }
 
-article a:link {
+main a:link {
     border-bottom: 2px solid #7aa6d2;
 }
 
-article a:visited {
+main a:visited {
     color: gray;  /* text */
 }
 
@@ -19,12 +19,12 @@ nav, footer {
 }
 
 /* BODY */
-body, article, .currentPage {
+body, .currentPage {
     background-color: #f1e3dd;
 }
 
 /* LIGHT */
-aside, nav a:hover, nav a:active, article a:hover, article a:active, #submit:hover {
+aside, nav a:hover, nav a:active, main a:hover, main a:active, #submit:hover {
     background-color: #afc7dd;
 }
 
@@ -32,14 +32,14 @@ aside, nav a:hover, nav a:active, article a:hover, article a:active, #submit:hov
     background-color: #c9c9c9;
 }
 
-body, article, .currentPage, aside, nav a:hover, nav a:active, article a:link, article a:hover, article a:active {
+body, main, .currentPage, aside, nav a:hover, nav a:active, main a:link, main a:hover, main a:active {
     color: black;  /* text */
 }
 
-footer, footer a, footer a:visited {
-    color: black;  /* text */
-}
-
-footer a:hover, footer a:active, nav li a {
+footer, footer a, footer a:visited, nav li a {
     color: white;  /* text */
+}
+
+footer a:hover, footer a:active  {
+    color: black;  /* text */
 }

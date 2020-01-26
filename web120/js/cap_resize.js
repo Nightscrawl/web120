@@ -1,3 +1,7 @@
+// resize reCAPTCHA image popup box:
+// https://geekgoddess.com/how-to-resize-the-google-nocaptcha-recaptcha/
+// see: comment by user Nitrox
+
 // create an observer instance
 var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {

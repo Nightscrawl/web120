@@ -1,25 +1,25 @@
 /* LAYOUT COLORS & LINKS */
 
 /* MEDIUM */
-header, article a:hover, article a:active, #submit:hover {
+header, main a:hover, main a:active, #submit:hover {
     background-color: #c485b8;
 }
 
-article a:link {
+main a:link {
     border-bottom: 2px solid #c485b8;
 }
 
-article a:visited {
+main a:visited {
     color: gray;  /* text */
 }
 
 /* DARK */
 nav, footer {
-    background-color: #af68a2;
+    background-color: #995a8d;
 }
 
 /* BODY */
-body, article, .currentPage {
+body, .currentPage {
     background-color: #e7e7e7;
 }
 
@@ -28,14 +28,14 @@ aside, nav a:hover, nav a:active, #submit {
     background-color: #c9c9c9;
 }
 
-body, article, .currentPage, aside, nav a:hover, nav a:active, article a:link, article a:hover, article a:active {
+body, main, .currentPage, aside, nav a:hover, nav a:active, main a:link, main a:hover, main a:active {
     color: black;  /* text */
 }
 
-footer, footer a, footer a:visited {
-    color: black;  /* text */
-}
-
-footer a:hover, footer a:active, nav li a {
+footer, footer a, footer a:visited, nav li a {
     color: white;  /* text */
+}
+
+footer a:hover, footer a:active {
+    color: black;  /* text */
 }
