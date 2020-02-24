@@ -1,0 +1,346 @@
+/*
+
+COLORS:
+
+header, footer dk gray - #191919
+nav almost black - #0d0d0d
+main lt gray - #e5e5e5
+aside med gray - #bfbfbf
+
+header gold - #997c43
+lighter gold - #cca668
+
+*/
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+img {
+    max-width: 100%;
+}
+
+body {
+    background: #191919 url("../img/bg-gold.png") repeat;  /* from https://pattern8.com/ - with edits */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+header, nav, main, aside, footer {
+    border-radius: 3px;
+}
+
+header, footer {
+    background-color: #191919;
+}
+
+header {
+    color: #997c43;
+}
+
+footer {
+    color: white;
+}
+
+nav {
+    background-color: #0d0d0d;
+    color: white;
+}
+
+main {
+    background-color: #e5e5e5;
+}
+
+aside {
+    background-color: #bfbfbf;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+main a {
+    padding: 1px;
+    border-radius: 2px;
+}
+
+main a:link {
+    color: black;
+    border-bottom: 2px solid #99763d;
+}
+
+main a:visited {
+    color: gray;
+    border: none;
+}
+
+main a:hover {
+    color: #cca668;
+    border-bottom: 2px solid #cca668;
+    background-color: #191919;
+}
+
+
+aside a {
+    padding: 1px;
+    border-radius: 2px;
+}
+
+aside a:link {
+    color: black;
+}
+
+aside a:visited {
+    color: gray;
+}
+
+aside a:hover {
+    color: #cca668;
+    background-color: #191919;
+}
+
+.reference p {
+    text-indent: -14px;
+    margin-left: 14px;
+}
+
+.research img {
+    display: block;
+    margin: 30px auto;
+}
+
+
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #cca668;
+}
+
+    
+.container {
+    margin: 0px auto;
+    min-height: 100vh;
+    max-width: 1920px;
+    display: grid;
+
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+header {
+    grid-area: header;
+    padding: 20px;    
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.25em;
+    margin-bottom: 14px;
+}
+
+h3 {
+    font-size: 1.10em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+nav {
+    grid-area: nav;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 0px;
+    padding: 10px;
+}
+
+main, aside {
+    padding: 20px;
+    line-height: 150%;
+}
+
+main {
+    grid-area: main;
+}
+
+main p, aside p, aside ul {
+    margin-bottom: 12px;
+}
+
+main p:last-of-type, aside p:last-of-type, aside ul:last-of-type {
+    margin-bottom: 0px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside p {
+    font-size: 0.875em;
+    line-height: 140%;
+}
+
+aside ul {
+    line-height: 140%;
+}
+
+aside li {
+    list-style-type: none;
+    list-style-position: outside;
+    margin-left: 14px;
+    font-size: 0.875em;
+}
+
+/* aside li a {
+    color: black !important;
+    border-bottom: none !important;
+}
+
+aside li a:hover {
+    color: #cca668 !important;
+    background-color: #191919 !important;
+} */
+
+
+footer {
+    grid-area: footer;
+    padding: 10px;
+    font-size: 0.6875em;
+    text-transform: uppercase;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.frame {
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid gray;
+}
+
+.border {
+    min-height: 249px;
+    border: none;
+}
+
+code, pre {
+    padding: 1px;
+    border-radius: 2px;
+    background-color: #bfbfbf;
+    border-left: 2px solid #cca668;
+}
+
+
+form > div {
+    margin-bottom: 14px;
+}
+
+form > div:last-of-type {
+    margin-bottom: 0px;
+}
+
+form > div:nth-last-of-type(2) {
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    padding: 4px;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid gray;
+}
+
+.input-box {
+    min-width: 300px;
+}
+
+textarea {
+    min-width: 300px;
+    min-height: 100px;
+}
+
+#submit {
+    width: 5em;
+    background-color: #bfbfbf;
+    border: 1px solid #191919;
+    color: black;
+}
+
+#submit:hover {
+    background-color: #997c43;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .input-box {
+        min-width: 80%;
+    }
+
+    textarea {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .input-box, textarea {
+        min-width: 100%;
+    }
+}
+
+
+/* 
+resize reCAPTCHA box:
+https://geekgoddess.com/how-to-resize-the-google-nocaptcha-recaptcha/
+ */
+ .g-recaptcha {
+    margin-top: 5px;
+    transform: scale(0.66);
+    -webkit-transform: scale(0.66);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+}
