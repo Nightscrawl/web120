@@ -15,7 +15,7 @@
     <p>
         2655 NW Market St<br />
         Seattle, WA 98107<br />
-        Phone: <a href="tel:1-206-789-5707">(206) 789-5707</a>
+        Phone: <a href="tel:+1-206-789-5707" target="_blank">(206) 789-5707</a>
     </p>                          
 
 </aside>
