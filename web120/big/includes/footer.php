@@ -1,6 +1,6 @@
             <footer>
                 <div class="left">
-                    Copyright 2020 by Kira Abell. All Rights Reserved.
+                    Copyright <?=date('Y')?> by Kira Abell. <br class="breakfooter" />All Rights Reserved.
                 </div>
 
                 <div class="right">

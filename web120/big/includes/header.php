@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>BIG</title>
+        <title><?=$title?></title>
         <meta name="author" content="K. Abell" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,inital-scale=1" />
@@ -20,7 +20,7 @@
         <div class="container">
 
             <header>
-                <h1>Web Dev Examples by Kira Abell</h1>
+                <h1>Web Dev Examples by Kira Abell <i class="logo <?=$logo?>" aria-hidden="true"></i></h1>
             </header>
 
             <nav class="cssmenu">

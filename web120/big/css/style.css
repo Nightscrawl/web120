@@ -150,6 +150,10 @@ header {
     padding: 20px;    
 }
 
+i.logo {
+    font-size: .5em;
+}
+
 h1 {
     font-size: 1.75em;
 }
@@ -247,8 +251,13 @@ footer {
 }
 
 .border {
+    width: 100%;
     min-height: 249px;
     border: none;
+}
+
+.breakfooter {
+    display: none;
 }
 
 code, pre {
@@ -324,11 +333,28 @@ textarea {
     textarea {
         min-width: 100%;
     }
+
+    footer {
+        text-align: center;
+        line-height: 133%;
+    }
+
+    .left {
+        float: none;
+    }
+
+    .right {
+        float: none;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .input-box, textarea {
         min-width: 100%;
+    }
+
+    .breakfooter {
+        display: inline;
     }
 }
 
