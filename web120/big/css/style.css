@@ -1,108 +1,113 @@
-/*
-
-COLORS:
-
-header, footer dk gray - #191919
-nav almost black - #0d0d0d
-main lt gray - #e5e5e5
-aside med gray - #bfbfbf
-
-header gold - #997c43
-lighter gold - #cca668
-
-*/
-
-
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-    
+
 img {
     max-width: 100%;
 }
 
+
+/* COLORS ------------------------------------------------------------ */
+
 body {
-    background: #191919 url("../img/bg-gold.png") repeat;  /* from https://pattern8.com/ - with edits */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    background: url("../img/bg-purple.png") repeat;  /* from https://pattern8.com/ - with edits */
     color: black;
 }
 
-header, nav, main, aside, footer {
-    border-radius: 3px;
-}
-
-header, footer {
+body, header, footer, main a:hover, aside a:hover, #submit:hover {
     background-color: #191919;
 }
 
-header {
-    color: #997c43;
+#submit, #submit:hover {
+    border-color: #191919;
 }
 
-footer {
-    color: white;
-}
-
-nav {
+nav, .cssmenu ul ul a:hover {
     background-color: #0d0d0d;
-    color: white;
 }
 
 main {
     background-color: #e5e5e5;
 }
 
-aside {
+aside, code, pre, #submit {
     background-color: #bfbfbf;
 }
 
+nav, footer, footer a, .cssmenu > ul > li > a {
+    color: white;
+}
+
+main a:link {
+    color: #7928a1;
+    border-bottom: 2px solid;
+}
+
+pre {
+    border-left: 2px solid #7928a1;
+}
+
+aside a:link {
+    color: #7600a8;  /* slightly darker */
+}
+
+header, footer a:hover, main a:hover, aside a:hover, .cssmenu ul ul a:hover {
+    color: #be90d4;
+    border-color: #be90d4;
+}
+
+#submit:hover {
+    color: #be90d4;    
+}
+
+.cssmenu > ul > li > a:hover, .cssmenu > ul > li.active {
+    background-color: #be90d4;
+}
+
+.cssmenu ul ul a, .cssmenu > ul > li > a:hover, .cssmenu > ul > li.active {
+    color: black;
+}
+
+main a:visited, aside a:visited {
+    color: gray;
+    border-color: gray;
+}
+
+.frame {
+    border: 1px solid gray;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid gray;
+}
+
+.cssmenu ul ul {
+    background: #F9F9F9;
+    border: 1px solid #CCC;
+}
+
+/* END COLORS ------------------------------------------------------------ */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;    
+}
+
+header, nav, main, aside, footer {
+    border-radius: 3px;
+}
 
 a {
     text-decoration: none;
 }
 
-main a {
+main a, aside a {
     padding: 1px;
     border-radius: 2px;
-}
-
-main a:link {
-    color: black;
-    border-bottom: 2px solid #99763d;
-}
-
-main a:visited {
-    color: gray;
-    border: none;
-}
-
-main a:hover {
-    color: #cca668;
-    border-bottom: 2px solid #cca668;
-    background-color: #191919;
-}
-
-
-aside a {
-    padding: 1px;
-    border-radius: 2px;
-}
-
-aside a:link {
-    color: black;
-}
-
-aside a:visited {
-    color: gray;
-}
-
-aside a:hover {
-    color: #cca668;
-    background-color: #191919;
 }
 
 .reference p {
@@ -113,16 +118,6 @@ aside a:hover {
 .research img {
     display: block;
     margin: 30px auto;
-}
-
-
-
-footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: #cca668;
 }
 
     
@@ -167,6 +162,11 @@ h3 {
     font-size: 1.10em;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+code, pre {
+    padding: 2px;
+    border-radius: 2px;
 }
 
 nav {
@@ -214,17 +214,6 @@ aside li {
     font-size: 0.875em;
 }
 
-/* aside li a {
-    color: black !important;
-    border-bottom: none !important;
-}
-
-aside li a:hover {
-    color: #cca668 !important;
-    background-color: #191919 !important;
-} */
-
-
 footer {
     grid-area: footer;
     padding: 10px;
@@ -247,7 +236,13 @@ footer {
 .frame {
     width: 100%;
     min-height: 500px;
-    border: 1px solid gray;
+}
+
+.boxy {
+    width: 100%;
+    margin: 10px auto;
+    min-height: 240px;
+    border: none;
 }
 
 .border {
@@ -258,13 +253,6 @@ footer {
 
 .breakfooter {
     display: none;
-}
-
-code, pre {
-    padding: 1px;
-    border-radius: 2px;
-    background-color: #bfbfbf;
-    border-left: 2px solid #cca668;
 }
 
 
@@ -284,11 +272,6 @@ input, textarea, select {
     padding: 4px;
 }
 
-fieldset {
-    border: none;
-    border-top: 1px solid gray;
-}
-
 .input-box {
     min-width: 300px;
 }
@@ -300,14 +283,7 @@ textarea {
 
 #submit {
     width: 5em;
-    background-color: #bfbfbf;
-    border: 1px solid #191919;
-    color: black;
-}
-
-#submit:hover {
-    background-color: #997c43;
-    color: white;
+    border: 1px solid;
 }
 
 

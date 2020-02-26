@@ -8,10 +8,11 @@
         Although it may not appear so at first glance, everything on a web page is inside a box.
     </p>
 
-    <img src="img/boxes.png" alt="a sample image showing various HTML elements within colored boxes" title="The box model" />
+    <!-- <img src="img/boxes.png" alt="a sample image showing various HTML elements within colored boxes" title="The box model" /> -->
+    <iframe class="boxy" src="boxy.html"></iframe>
 
     <p>
-        In the image above, the html is bordered with green, the body with orange, the big header with red, the smaller header with purple, the paragraph with blue, the link with teal, and finally the horizontal rule with pink. This is a visual representation of the <em>box model</em>.
+        In the frame above, the html is bordered with green, the body with orange, the big header with red, the smaller header with purple, the paragraph with blue, the link with teal, and finally the horizontal rule with pink. This is a visual representation of the <em>box model</em>.
     </p>
 
     <p>

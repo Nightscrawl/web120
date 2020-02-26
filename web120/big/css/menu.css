@@ -102,16 +102,16 @@
   padding: 8px 14px;
   text-decoration: none;
   border: none;
-  color: white;
+  /* color: white; */
 }
 
-.cssmenu > ul > li > a:hover {
+/* .cssmenu > ul > li > a:hover {
   background-color: #997c43;
 }
 
 .cssmenu > ul > li.active {
   background: #444444;
-}
+} */
 
 .portal-link {
   border-radius: 3px 0px 0px 3px;
@@ -205,15 +205,15 @@
 /* SUB MENU -------------------- */
 
 .cssmenu ul ul {
-  background: #F9F9F9;
-  border: 1px solid #CCC;
+  /* background: #F9F9F9;
+  border: 1px solid #CCC; */
   /* -webkit-border-radius: 3px 0px 0px 3px;
   -moz-border-radius: 3px 0px 0px 3px; */
   border-radius: 0px 0px 3px 3px;
   /* -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); */
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
-  padding: 5px 12px;
+  /* padding: 5px 12px; */
   display: none;
   position: absolute;
   top: 32px;
@@ -222,18 +222,19 @@
   z-index: 1;
 }
 
-.cssmenu ul ul li {
+/* .cssmenu ul ul li {
   padding: 3px 0;
-}
+} */
 
 .cssmenu ul ul a {
-  color: #999;
+  /* color: #999; */
   display: block;
+  padding: 5px 12px;
 }
 
-.cssmenu ul ul a:hover {
+/* .cssmenu ul ul a:hover {
   color: #444;
-}
+} */
 
 @media all and (max-width: 560px) {
   .cssmenu ul ul {

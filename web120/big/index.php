@@ -36,6 +36,7 @@
         <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
         <li><a href="https://www.w3schools.com/colors/colors_palettes.asp" target="_blank">W3Schools Color Palettes</a></li>
         <li><a href="https://www.canva.com/colors/color-palette-generator/" target="_blank">Canva Color Palette Generator</a></li>
+        <li><a href="http://colorsafe.co/" target="_blank">Color Safe</a></li>
     </ul>
 
 </aside>
